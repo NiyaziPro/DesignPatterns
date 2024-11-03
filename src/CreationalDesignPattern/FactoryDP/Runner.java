@@ -10,13 +10,13 @@ Example: A document editor that supports multiple file types (PDF, DOCX, etc.) w
 
     public static void main(String[] args) {
 
-        Shape triangle = new Triangle("Triangle",60,3);
+        Shape triangle = new Triangle("Triangle", 60, 3);
         triangle.draw();
 
-        Shape square = new Square("Square",90,4);
+        Shape square = new Square("Square", 90, 4);
         square.draw();
 
-        Shape hexagon = new Hexagon("Hexagon",120,6);
+        Shape hexagon = new Hexagon("Hexagon", 120, 6);
         hexagon.draw();
 
         System.out.println("============================================");
@@ -31,4 +31,5 @@ Example: A document editor that supports multiple file types (PDF, DOCX, etc.) w
         shape3.draw();
 
     }
+
 }

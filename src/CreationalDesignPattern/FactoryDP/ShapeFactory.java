@@ -8,8 +8,9 @@ public class ShapeFactory {
         } else if (type == ShapeType.SQUARE) {
             return new Square("Square", 90, 4);
         } else if (type == ShapeType.HEXAGON) {
-            new Hexagon("Hexagon", 120, 6);
+            return new Hexagon("Hexagon", 120, 6);
         }
         return null;
+
     }
 }
