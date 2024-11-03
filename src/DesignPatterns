@@ -63,3 +63,67 @@ Use case: Managing an object's behavior across different states.
 Example: A traffic light system that behaves differently based on states (e.g., red, yellow, green).
 These patterns are part of the foundation of well-structured code, making applications more maintainable, extensible, and robust.
 Applying the right pattern in the right scenario improves the design and development process significantly.
+
+German :
+
+Ein Entwurfsmuster ist eine allgemeine, wiederverwendbare Lösung für ein häufig auftretendes Problem in der Softwareentwicklung. Sie bieten eine standardisierte Terminologie und sind für bestimmte Szenarien gedacht. Jedes Muster beschreibt ein Problem, die Lösung, wann die Lösung angewendet werden soll und die jeweiligen Konsequenzen. Muster werden typischerweise in drei Hauptkategorien unterteilt:
+
+Erzeugungsmuster: Diese befassen sich mit Mechanismen zur Objekterzeugung und versuchen, Objekte in einer Weise zu erstellen, die zur jeweiligen Situation passt.
+Strukturmuster: Sie konzentrieren sich auf die Struktur des Systems oder die Objektkomposition und definieren, wie Klassen und Objekte kombiniert werden können.
+Verhaltensmuster: Diese befassen sich mit der Interaktion und Kommunikation zwischen Objekten und fokussieren sich auf die Verantwortlichkeiten zwischen ihnen.
+Wichtige Entwurfsmuster
+Im Folgenden sind einige gängige Entwurfsmuster aufgeführt, zusammen mit ihren Zwecken und Beispielen für ihre Verwendung.
+
+1. Singleton-Muster (Erzeugungsmuster)
+Zweck: Sicherstellen, dass eine Klasse nur eine Instanz hat und einen globalen Zugriffspunkt darauf bereitstellt.
+Anwendungsfall: Protokollierung, Zwischenspeicherung, Konfigurationen oder Verbindungs-Pools.
+Beispiel: Eine Konfigurationsmanager-Klasse, die Einstellungen nur einmal lädt und diese im gesamten Anwendungskontext bereitstellt.
+2. Factory Method Pattern (Erzeugungsmuster)
+Zweck: Definieren einer Schnittstelle zur Objekterstellung, wobei die Unterklassen die Art der zu erstellenden Objekte verändern können.
+Anwendungsfall: Wenn eine Klasse die Art der zu erstellenden Objekte nicht im Voraus kennen kann oder die Verantwortung für die Objekterstellung an Unterklassen delegieren möchte.
+Beispiel: Ein Dokumenteneditor, der mehrere Dateitypen unterstützt (z.B. PDF, DOCX), wobei jeder Dateityp seinen eigenen Erstellungsprozess hat.
+3. Abstract Factory Pattern (Erzeugungsmuster)
+Zweck: Bereitstellen einer Schnittstelle zur Erstellung verwandter oder abhängiger Objekte, ohne deren konkrete Klassen zu spezifizieren.
+Anwendungsfall: Systeme, die unabhängig von der Art und Zusammensetzung ihrer Objekte sein müssen, insbesondere bei komplexen Objekt-Hierarchien.
+Beispiel: UI-Frameworks, die mehrere Themen unterstützen (z. B. helle und dunkle Modi), wobei jedes Thema unterschiedliche stilisierte Komponenten bereitstellt.
+4. Builder-Muster (Erzeugungsmuster)
+Zweck: Trennung der Konstruktion eines komplexen Objekts von seiner Darstellung, sodass derselbe Konstruktionsprozess verschiedene Darstellungen erstellen kann.
+Anwendungsfall: Wenn ein Objekt zahlreiche Parameter oder komplexe Einrichtungsschritte erfordert oder wenn man „verkettete Konstruktoren“ vermeiden möchte.
+Beispiel: Das Erstellen eines Meal-Objekts mit verschiedenen Optionen wie Hauptgericht, Getränk und Dessert.
+5. Prototype-Muster (Erzeugungsmuster)
+Zweck: Die Arten von zu erstellenden Objekten mithilfe eines prototypischen Beispiels angeben und neue Objekte durch Kopieren dieses Prototyps erstellen.
+Anwendungsfall: Wenn die Erstellung eines Objekts aufwendig ist und man vermeiden möchte, Objekte von Grund auf neu zu erstellen.
+Beispiel: Ein System zur Charaktererstellung in Spielen, bei dem neue Charaktere auf einer vorhandenen Charaktervorlage basieren können.
+6. Adapter-Muster (Strukturmuster)
+Zweck: Die Schnittstelle einer Klasse in eine andere umwandeln, die der Client erwartet, sodass inkompatible Schnittstellen zusammenarbeiten können.
+Anwendungsfall: Integration eines Altsystems in ein neues System oder das Verbinden verschiedener Bibliotheken.
+Beispiel: Eine API einer Drittanbieter-Bibliothek umwickeln, damit sie die Schnittstellenanforderungen einer eigenen Anwendung erfüllt.
+7. Composite-Muster (Strukturmuster)
+Zweck: Objekte zu Baumstrukturen zusammenfassen, um Teil-Ganzes-Hierarchien darzustellen, sodass Clients individuelle Objekte und Kompositionen einheitlich behandeln können.
+Anwendungsfall: Aufbau hierarchischer Strukturen wie Dateien und Ordner in einem Dateisystem.
+Beispiel: Ein Grafikeditor, in dem Formen (z. B. Linien, Kreise) zu einer komplexen Form gruppiert werden können.
+8. Decorator-Muster (Strukturmuster)
+Zweck: Zusätzliche Verantwortlichkeiten zu einem Objekt dynamisch hinzufügen. Es bietet eine flexible Alternative zur Unterklassenbildung zur Erweiterung von Funktionalitäten.
+Anwendungsfall: Wenn Sie neuen Objekten Verhalten hinzufügen müssen, ohne ihre Struktur zu ändern.
+Beispiel: Hinzufügen von Funktionen wie Bildlaufleisten, Rändern und Schatten zu Fenstern in einem GUI-Framework.
+9. Facade-Muster (Strukturmuster)
+Zweck: Bereitstellen einer einheitlichen Schnittstelle für eine Menge von Schnittstellen in einem Subsystem, sodass das Subsystem leichter zu verwenden ist.
+Anwendungsfall: Vereinfachung einer komplexen Bibliothek oder eines Frameworks durch Bereitstellung einer einfacheren API.
+Beispiel: Ein Hotelverwaltungssystem, das eine einfache API für Buchung, Check-in und Abrechnung bereitstellt, ohne dass die zugrunde liegenden Subsysteme offen gelegt werden.
+10. Observer-Muster (Verhaltensmuster)
+Zweck: Definieren einer Abhängigkeit von eins zu vielen zwischen Objekten, sodass alle Abhängigen benachrichtigt und automatisch aktualisiert werden, wenn sich ein Objektzustand ändert.
+Anwendungsfall: Ereignisverarbeitungssysteme, wie die Aktualisierung von Benutzeroberflächen, wenn sich Daten ändern.
+Beispiel: Eine Wetterstation, die mehrere Displays mit Wetteraktualisierungen benachrichtigt.
+11. Strategy-Muster (Verhaltensmuster)
+Zweck: Eine Familie von Algorithmen definieren, jeden von ihnen kapseln und sie austauschbar machen. Die Strategie erlaubt es, den Algorithmus unabhängig von den Clients zu variieren, die ihn nutzen.
+Anwendungsfall: Wenn je nach Situation oder Kontext unterschiedliche Verhaltensweisen erforderlich sind.
+Beispiel: Ein Zahlungssystem, das verschiedene Zahlungsmethoden unterstützt, wie z. B. Kreditkarten, PayPal oder Kryptowährungen.
+12. Command-Muster (Verhaltensmuster)
+Zweck: Eine Anfrage als Objekt kapseln und es so ermöglichen, Clients mit Warteschlangen, Anfragen und Operationen zu parametrieren.
+Anwendungsfall: Implementierung von Aktionen wie Rückgängig und Wiederholen.
+Beispiel: Ein Texteditor, bei dem jede Operation (wie Kopieren, Einfügen, Löschen) als Befehl kapsuliert werden kann.
+13. State-Muster (Verhaltensmuster)
+Zweck: Einem Objekt erlauben, sein Verhalten zu ändern, wenn sich sein interner Zustand ändert, sodass es scheint, als würde es seine Klasse ändern.
+Anwendungsfall: Verwaltung des Verhaltens eines Objekts über verschiedene Zustände hinweg.
+Beispiel: Ein Ampelsystem, das je nach Zustand (z. B. Rot, Gelb, Grün) unterschiedlich funktioniert.
+Diese Muster bilden die Grundlage für gut strukturierte Codes und machen Anwendungen wartbarer, erweiterbarer und robuster. Das richtige Muster in der richtigen Situation anzuwenden, verbessert den Entwicklungs- und Designprozess erheblich.

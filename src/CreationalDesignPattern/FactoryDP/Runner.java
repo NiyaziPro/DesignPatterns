@@ -6,6 +6,11 @@ Factory Method Pattern (Creational)
 Purpose: Define an interface for creating an object but let subclasses alter the type of objects that will be created.
 Use case: When a class can't anticipate the class of objects it must create, or when it wants to delegate the responsibility of creating objects to its subclasses.
 Example: A document editor that supports multiple file types (PDF, DOCX, etc.) where each file type has its own creation process.
+
+ Factory Method Pattern (Erzeugungsmuster)
+Zweck: Definieren einer Schnittstelle zur Objekterstellung, wobei die Unterklassen die Art der zu erstellenden Objekte verändern können.
+Anwendungsfall: Wenn eine Klasse die Art der zu erstellenden Objekte nicht im Voraus kennen kann oder die Verantwortung für die Objekterstellung an Unterklassen delegieren möchte.
+Beispiel: Ein Dokumenteneditor, der mehrere Dateitypen unterstützt (z.B. PDF, DOCX), wobei jeder Dateityp seinen eigenen Erstellungsprozess hat.
  */
 
     public static void main(String[] args) {
