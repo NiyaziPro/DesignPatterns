@@ -10,24 +10,24 @@ Example: A document editor that supports multiple file types (PDF, DOCX, etc.) w
 
     public static void main(String[] args) {
 
-        Shape triangle = new Triangle("Triangle", 60, 3);
+        Shape01 triangle = new Triangle("Triangle", 60, 3);
         triangle.draw();
 
-        Shape square = new Square("Square", 90, 4);
+        Shape01 square = new Square("Square", 90, 4);
         square.draw();
 
-        Shape hexagon = new Hexagon("Hexagon", 120, 6);
+        Shape01 hexagon = new Hexagon("Hexagon", 120, 6);
         hexagon.draw();
 
         System.out.println("============================================");
 
-        Shape shape1 = ShapeFactory.getShape(ShapeType.TRIANGLE);
+        Shape01 shape1 = ShapeFactory.getShape(ShapeType.TRIANGLE);
         shape1.draw();
 
-        Shape shape2 = ShapeFactory.getShape(ShapeType.SQUARE);
+        Shape01 shape2 = ShapeFactory.getShape(ShapeType.SQUARE);
         shape2.draw();
 
-        Shape shape3 = ShapeFactory.getShape(ShapeType.HEXAGON);
+        Shape01 shape3 = ShapeFactory.getShape(ShapeType.HEXAGON);
         shape3.draw();
 
     }

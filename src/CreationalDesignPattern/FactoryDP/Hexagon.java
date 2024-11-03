@@ -1,6 +1,6 @@
 package CreationalDesignPattern.FactoryDP;
 
-public class Hexagon implements Shape {
+/*public*/ class Hexagon implements Shape01 {
 
     private String name;
     private int angle;

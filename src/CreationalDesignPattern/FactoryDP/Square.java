@@ -1,6 +1,6 @@
 package CreationalDesignPattern.FactoryDP;
 
-public class Square implements Shape{
+/*public*/ class Square implements Shape01 {
     private String name;
     private int angle;
     private int edge;
