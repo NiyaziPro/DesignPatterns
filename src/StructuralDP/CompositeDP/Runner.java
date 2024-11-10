@@ -22,6 +22,7 @@ Beispiel: Ein Grafikeditor, in dem Formen (z. B. Linien, Kreise) zu einer komple
 
         Finance finance = new Finance();
         Sales sales = new Sales();
+        Arge arge = new Arge();
 
         List<String> allEmployees = new ArrayList<>();
 
@@ -35,9 +36,11 @@ Beispiel: Ein Grafikeditor, in dem Formen (z. B. Linien, Kreise) zu einer komple
         HeadDepartment department = new HeadDepartment();
         department.addDepartment(finance);
         department.addDepartment(sales);
+        department.addDepartment(arge);
 
-        System.out.println(BG_BRIGHT_GREEN + BLACK + "Names of Department : " + department.getName() + RESET);
+        System.out.println(BG_BRIGHT_CYAN + BLACK + "Names of Department : " + department.getName() + RESET);
         System.out.println(BG_BRIGHT_YELLOW + BLACK + "Employees : " + department.getEmployees() + RESET);
+
 
 
     }
