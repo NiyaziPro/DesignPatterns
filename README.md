@@ -71,3 +71,81 @@ Structural design patterns focus on composing classes or objects into larger str
    - **Example**: A virtual proxy that loads an image only when it is displayed.
 
 ---
+
+Hier ist die Beschreibung der Designmuster auf Deutsch:
+
+---
+
+# Übersicht über Design Patterns
+
+Dieses Repository zeigt die Implementierung verschiedener Designmuster, die in **Verhaltensmuster**, **Erzeugungsmuster** und **Strukturmuster** kategorisiert sind. Nachfolgend finden Sie eine Beschreibung der enthaltenen Designmuster:
+
+---
+
+## **Verhaltensmuster (Behavioral Design Patterns)**  
+Verhaltensmuster konzentrieren sich darauf, die Kommunikation zwischen Objekten zu verbessern und die Interaktion flexibler und erweiterbarer zu gestalten.
+
+1. **Chain of Responsibility (ChainOfResponsibilityDP)**  
+   Das Chain of Responsibility-Muster ermöglicht es, dass eine Anfrage von mehreren Objekten in einer Kette verarbeitet wird, wobei jeder Handler entscheidet, ob er die Anfrage bearbeitet oder an den nächsten Handler weiterleitet.  
+   - **Anwendungsfall**: Logging-Frameworks, Anfragebearbeitung in einem Webserver.  
+   - **Beispiel**: Eine Benutzerberechtigungsanfrage durchläuft mehrere Validierungsschichten, wobei jede Schicht entweder die Anfrage bearbeitet oder weiterleitet.
+
+2. **Mediator (MediatorDP)**  
+   Das Mediator-Muster definiert ein zentrales Objekt, das die Kommunikation zwischen mehreren Objekten erleichtert, um direkte Interaktionen zu vermeiden und die Kopplung zu reduzieren.  
+   - **Anwendungsfall**: GUI-Komponenten, bei denen Buttons, Textfelder und Kontrollkästchen indirekt über einen Mediator interagieren.  
+   - **Beispiel**: Eine Chat-Anwendung, bei der ein zentraler Server Nachrichten zwischen Benutzern weiterleitet.
+
+---
+
+## **Erzeugungsmuster (Creational Design Patterns)**  
+Erzeugungsmuster konzentrieren sich auf Mechanismen zur Objekterstellung und bieten Flexibilität bei der Instanziierung von Objekten.
+
+1. **Abstract Factory (AbstractFactoryDP)**  
+   Das Abstract Factory-Muster bietet eine Schnittstelle zur Erstellung von Familien verwandter oder abhängiger Objekte, ohne deren konkrete Klassen anzugeben.  
+   - **Anwendungsfall**: Plattformübergreifende GUI-Frameworks, die Windows- oder Mac-ähnliche UI-Elemente erstellen.  
+   - **Beispiel**: Erstellung verschiedener Themen (hell und dunkel) für ein UI-Toolkit.
+
+2. **Factory Method (FactoryDP)**  
+   Das Factory Method-Muster definiert eine Methode in einer Basisklasse zur Objekterstellung, ermöglicht es jedoch abgeleiteten Klassen, den Typ der zu erstellenden Objekte zu ändern.  
+   - **Anwendungsfall**: Wenn eine Klasse die Objekterstellung an ihre Unterklassen delegieren muss.  
+   - **Beispiel**: Ein Dokumenteditor, der verschiedene Dokumenttypen wie Word- oder PDF-Dateien erstellt.
+
+3. **Prototype (PrototypeDP)**  
+   Das Prototype-Muster ermöglicht es, neue Objekte zu erstellen, indem ein vorhandenes Objekt als Prototyp kopiert wird. Dies vermeidet den Aufwand, Objekte von Grund auf zu erstellen.  
+   - **Anwendungsfall**: Wenn eine große Anzahl ähnlicher Objekte erstellt werden muss.  
+   - **Beispiel**: Klonen eines Benutzerprofils oder von Konfigurationseinstellungen in einer Anwendung.
+
+4. **Singleton (SingletonDP)**  
+   Das Singleton-Muster stellt sicher, dass eine Klasse nur eine Instanz hat, und bietet einen globalen Zugriffspunkt darauf.  
+   - **Anwendungsfall**: Verwaltung von gemeinsam genutzten Ressourcen wie einer Datenbankverbindung oder einem Logging-Dienst.  
+   - **Beispiel**: Ein Konfigurationsmanager, der Einstellungen aus einer Datei lädt und diese in der gesamten Anwendung teilt.
+
+5. **Factory Test (FactoryDP_test)**  
+   Dieses Verzeichnis enthält Testfälle für das Factory Method-Muster, um sicherzustellen, dass die Implementierung den erwarteten Anforderungen entspricht.
+
+---
+
+## **Strukturmuster (Structural Design Patterns)**  
+Strukturmuster konzentrieren sich darauf, Klassen oder Objekte in größeren Strukturen zu organisieren und dabei flexibel und effizient zu bleiben.
+
+1. **Composite (CompositeDP)**  
+   Das Composite-Muster ermöglicht es, Objekte zu Baumstrukturen zu kombinieren, um Teil-Ganzes-Hierarchien darzustellen. Es ermöglicht, einzelne Objekte und Objektkompositionen einheitlich zu behandeln.  
+   - **Anwendungsfall**: Dateisysteme, bei denen Dateien und Ordner gleich behandelt werden.  
+   - **Beispiel**: Eine Zeichenanwendung, bei der Formen gruppiert werden können, und Gruppen wie einzelne Formen manipuliert werden können.
+
+2. **Decorator (DecoratorDP)**  
+   Das Decorator-Muster fügt einem Objekt dynamisch Verhalten hinzu, ohne dessen Struktur zu ändern.  
+   - **Anwendungsfall**: Hinzufügen von Funktionen zu einer grafischen Komponente wie Bildlaufleisten oder Rahmen zur Laufzeit.  
+   - **Beispiel**: Ein Textfeld-Objekt, das um Funktionen wie Rechtschreibprüfung erweitert wird.
+
+3. **Facade (FacadeDP)**  
+   Das Facade-Muster bietet eine vereinfachte Schnittstelle für ein größeres System, um die Nutzung zu erleichtern.  
+   - **Anwendungsfall**: Vereinfachung der Interaktion mit einem komplexen Subsystem, wie z. B. einer Multimedia-Verarbeitung.  
+   - **Beispiel**: Ein Hotelbuchungssystem, das eine einzige API für die Suche und Buchung von Zimmern bereitstellt.
+
+4. **Proxy (ProxyDP)**  
+   Das Proxy-Muster bietet einen Stellvertreter oder Platzhalter für ein anderes Objekt, um den Zugriff darauf zu steuern.  
+   - **Anwendungsfall**: Implementierung von Lazy Initialization, Zugriffskontrolle oder Logging für Objekte.  
+   - **Beispiel**: Ein virtueller Proxy, der ein Bild nur lädt, wenn es angezeigt wird.
+
+---
